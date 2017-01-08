@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>延迟对象</title>
+	</head>
+	<body>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$.get("student.json", "json").done(function(stu) {
+                console.log(stu.id);
+           });
+		</script>
+	</body>
+</html>

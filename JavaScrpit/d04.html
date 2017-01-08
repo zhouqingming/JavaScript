@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+				font: 30px/100px "microsoft yahei";
+				text-align: center;
+				background-color: lightblue;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+	   <div class="box">
+	   	a
+	   </div>
+	    <div class="box">
+	   	b
+	   </div>
+	    <div class="box">
+	   	c
+	   </div>
+	    <div class="box">
+	   	d
+	   </div>
+	    <div class="box">
+	   	e
+	   </div>
+	    <div class="box">
+	   	f
+	   </div>
+	    <div class="box">
+	   	g
+	   </div>
+	    <div class="box">
+	   	h
+	   </div>
+	    <div class="box">
+	   	i
+	   </div>
+	    <div class="box">
+	   	j
+	   </div>
+	  <script type="text/javascript">
+//	  	  var divs=document.getElementsByTagName("div");
+//	  	  for(var i=0;i<divs.length;i++)
+//	  	  {
+//	  	  	divs[i].onclick=function(){
+//	  	  		alert(i);
+//	  	  	}
+//	  	  }
+          var divs=document.getElementsByTagName("div");
+          for(var i=0;i<divs.length;i++)
+          {
+          	divs[i].onclick=(function(n){
+          		return function(){
+          			alert(n);
+          		}
+          	})(i);
+          }
+	  </script>
+	</body>
+</html>

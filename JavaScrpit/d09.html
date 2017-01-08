@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="btnA" id="btnA"/>
+		<input type="button" value="btnB" id="btnB" onclick="app.show()"/>
+		<script type="text/javascript">
+			var app={
+				value:"app的值",
+				show:function(){
+					alert(this.value);
+				},
+				
+				init:function(){
+					document.getElementById("btnA").addEventListener("click",this.show,false);
+				}
+			}
+			
+			app.show();
+			app.init();
+		</script>
+	</body>
+</html>

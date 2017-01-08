@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function conter () {
+				var sum=0;
+				for(var i=0;i<arguments.length;i++){
+					sum+=arguments[i];
+				}
+				return sum;
+			}
+			
+			console.log(conter(54,76,45));
+			
+			
+			function f1(){
+				console.log(arguments.length);
+				f2=function(){
+					console.log(arguments.length);
+				}
+				return f2;
+			}
+			
+			var f=f1(4,56,6);
+			f();
+		</script>
+	</body>
+</html>

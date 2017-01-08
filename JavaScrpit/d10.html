@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+		var mydate=new Date();
+			Date.prototype.trandition=function(){
+				var newmydate=mydate.getFullYear()+"年"+mydate.getMonth()+"月"+mydate.getDate()+"日   "+mydate.getHours()+"点"+mydate.getMinutes()+"分"+mydate.getSeconds()+"秒";
+					return newmydate;
+			}
+			
+			console.log(mydate.trandition());
+		</script>
+	</body>
+</html>

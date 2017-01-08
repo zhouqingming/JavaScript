@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function add(n1,n2){
+				console.log(n1+n2);
+				//arguments.callee(n1,n2);  //无限循环
+				return arguments.callee;     //链式编程
+			}
+			
+			(function(){
+				console.log("第一种立即执行的方法");
+			}());
+			
+			(function(){
+				console.log("第二种方法");
+			})();
+		</script>
+	</body>
+</html>

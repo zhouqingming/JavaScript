@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript">
+		function student(name,age){
+			this.name=name;
+			this.age=age;
+			
+		}
+		
+		show=function(add){
+			console.log(add+":"+this.name+","+this.age);
+		}
+		var bar=new student("张三",18);
+		
+		
+		show.call(bar,"大家好");
+		
+		
+		(function(){
+			console.log("123");
+		})();
+	</script>
+	</body>
+</html>
